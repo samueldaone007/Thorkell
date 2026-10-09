@@ -1,0 +1,5 @@
+# Optional: fully-local transcription fallback. Install only if you want to
+# run Whisper on your own machine instead of the Groq cloud free tier.
+#   pip install -r requirements-optional.txt
+#
+# faster-whisper==1.1.0

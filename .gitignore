@@ -1,0 +1,26 @@
+# --- Python / backend ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# --- Local data (never commit recordings or the database) ---
+backend/.env
+backend/thorkell.db
+backend/storage/
+*.sqlite3
+
+# --- Node / frontend ---
+node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

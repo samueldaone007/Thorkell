@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 255 255 255;
+  --surface: 250 250 255;
+  --fg: 26 11 46;
+  --muted: 243 240 255;
+  --muted-fg: 107 114 128;
+  --border: 237 233 254;
+  --primary: 109 40 217;
+  --primary-hover: 91 33 182;
+  --primary-foreground: 255 255 255;
+  --ring: 139 92 246;
+}
+
+.dark {
+  --bg: 14 10 26;
+  --surface: 26 18 48;
+  --fg: 245 243 255;
+  --muted: 34 24 56;
+  --muted-fg: 167 159 194;
+  --border: 46 36 80;
+  --primary: 167 139 250;
+  --primary-hover: 196 181 253;
+  --primary-foreground: 26 11 46;
+  --ring: 139 92 246;
+}
+
+@layer base {
+  * {
+    border-color: rgb(var(--border));
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  ::selection {
+    background: rgb(var(--primary));
+    color: rgb(var(--primary-foreground));
+  }
+}
+
+@layer components {
+  .mark-hit {
+    @apply rounded bg-primary/20 px-0.5 text-primary;
+  }
+}
+
+* {
+  scrollbar-color: rgb(var(--border)) transparent;
+}

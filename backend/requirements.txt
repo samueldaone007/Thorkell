@@ -1,0 +1,13 @@
+# Version floors (not hard pins) so pip can pick wheels that match your Python.
+# Python 3.14 needs pydantic >= 2.12 / pydantic-core >= 2.41 (newer PyO3),
+# SQLAlchemy >= 2.0.41, and plain uvicorn (its [standard] extra pulls native
+# deps like httptools that often lack wheels on a brand-new Python).
+fastapi>=0.115
+uvicorn>=0.34
+sqlalchemy>=2.0.41
+pydantic>=2.12
+pydantic-settings>=2.7
+python-multipart>=0.0.20
+httpx>=0.28.1
+fpdf2>=2.8.2
+python-dotenv>=1.0.1
